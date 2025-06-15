@@ -96,6 +96,7 @@ ul {
   border-radius: 50%;
   width: 9px;
   height: 9px;
+  margin-bottom: 2px;
 }
 
 .header__theme-menu {
@@ -115,7 +116,9 @@ ul {
   font-size: 18px;
   text-align: center;
   border: 1px solid transparent;
-  padding: 2px 12px;
+  height:26px;
+  width:70px;
+  padding: 1.5px 13px 4.5px;
   color: var(--secondary-color, #ff0070);
   line-height: 18px;
   text-transform: lowercase;
@@ -127,6 +130,10 @@ ul {
   border-color: currentColor;
   cursor: default;
   pointer-events: none;
+}
+
+.header__theme-menu-button:hover {
+  border-color: var(--secondary-color-o-40, #FF007066);
 }
 
 .header__theme-menu-button:focus {
@@ -225,8 +232,8 @@ ul {
     left: 20px;
   }
   .rec {
-    inset-inline-end: 28px;
-    inset-block-start: 20px;
+    inset-inline-end: 29px;
+    inset-block-start: 21px;
   }
 
   .page-title {
@@ -266,13 +273,13 @@ ul {
   }
 
   .header {
-    height: 1024px;
+    min-height: 1024px;
     padding: 20px;
     padding-inline-start: 0;
   }
 
   .header__theme-menu {
-    margin-block-start: 146px;
+    margin-block-start: 172px;
     margin-block-end: 173px;
   }
 
@@ -298,8 +305,9 @@ ul {
   }
 
   .header {
-    height: 768px;
+    min-height: 768px;
   }
+
   .header__title {
     margin-block: 114px;
   }
